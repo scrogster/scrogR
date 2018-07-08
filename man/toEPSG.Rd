@@ -23,15 +23,15 @@ A Spatial* object in the specified coordinate system.
 Actual conversion is done by \code{spTransform} from package \code{maptools}
 }
 \details{
-This shoukd work for any EPSG codes provided at \url{http://spatialreference.org/ref/epsg/}
+This should work for any EPSG code provided at \url{http://spatialreference.org/ref/epsg/}
 
 \code{toVicgrid(spobj)} is a convenient shortcut to convert to Vicgrid (epsg 3111)
 
 \code{toMGA55(spobj)} is a convenient shortcut to convert to MGA55
 
-\code{toMGA54(spobj)} is a convenient shortcut to convert to MGA55
+\code{toMGA54(spobj)} is a convenient shortcut to convert to MGA54
 
-\code{toWGS84(spobj)} is a convenient shortcut to convert to WGS85
+\code{toWGS84(spobj)} is a convenient shortcut to convert to WGS84
 }
 \examples{
 cities_wgs<-SpatialPointsDataFrame(coords=cities[,-1], data=data.frame(city=cities$city), proj4string=CRS("+init=epsg:4326"))
